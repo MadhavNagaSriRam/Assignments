@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+	int n,i,x,cb=0,cs=0,ca=0;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+	scanf("%d",&x);
+	if(x<=3 && x>=1)
+	cb++;
+	else
+	if(x>=4 && x<=15)
+	cs++;
+	else
+	if(x>=16 )
+	ca++;
+	}
+	printf("The number of babies: %d",cb);
+	printf("\nThe number of childrens: %d",cs);
+	printf("\nThe number of Adults: %d",ca);
+}
